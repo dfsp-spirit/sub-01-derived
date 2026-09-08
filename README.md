@@ -45,7 +45,7 @@ git clone https://github.com/dfsp-spirit/sub-01-derived
 ```
 
 If you cloned without Git LFS installed first:
-Your checkout will only contain tiny text pointer files (~130 bytes for all LFS files). To pull the actual data:
+Your checkout will only contain tiny text pointer files (~130 bytes) for all LFS files (currently only the one file listed above). To pull the actual data:
 
 
 ```bash
