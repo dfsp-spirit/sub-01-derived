@@ -1,0 +1,83 @@
+status file for recon-all
+Fri Sep  4 13:16:49 CEST 2026
+#@# T2/FLAIR Input Fri Sep  4 13:16:51 CEST 2026
+#@# MotionCor Fri Sep  4 13:16:53 CEST 2026
+#@# Nu Intensity Correction Fri Sep  4 13:21:31 CEST 2026
+#@# Intensity Normalization Fri Sep  4 13:23:23 CEST 2026
+
+#@# MCADura Segmentation Fri Sep  4 13:24:07 CEST 2026
+
+#@# VSinus Segmentation Fri Sep  4 13:24:22 CEST 2026
+#@# EM Registration Fri Sep  4 13:24:33 CEST 2026
+#@# CA Normalize Fri Sep  4 13:25:17 CEST 2026
+
+#@# EntoWM Segmentation Fri Sep  4 13:25:48 CEST 2026
+#@# CC Seg Fri Sep  4 13:25:56 CEST 2026
+#@# Merge ASeg Fri Sep  4 13:26:16 CEST 2026
+#@# Intensity Normalization2 Fri Sep  4 13:26:16 CEST 2026
+#@# Mask BFS Fri Sep  4 13:27:22 CEST 2026
+#@# WM Segmentation Fri Sep  4 13:27:25 CEST 2026
+#@# Fill Fri Sep  4 13:28:39 CEST 2026
+#@# Tessellate lh Fri Sep  4 13:29:11 CEST 2026
+#@# Tessellate rh Fri Sep  4 13:29:13 CEST 2026
+#@# Smooth1 lh Fri Sep  4 13:29:14 CEST 2026
+#@# Smooth1 rh Fri Sep  4 13:29:16 CEST 2026
+#@# Inflation1 lh Fri Sep  4 13:29:17 CEST 2026
+#@# Inflation1 rh Fri Sep  4 13:29:24 CEST 2026
+#@# QSphere lh Fri Sep  4 13:29:30 CEST 2026
+#@# QSphere rh Fri Sep  4 13:30:15 CEST 2026
+#@# Fix Topology lh Fri Sep  4 13:30:57 CEST 2026
+#@# Fix Topology rh Fri Sep  4 13:32:10 CEST 2026
+#@# Smooth2 lh Fri Sep  4 13:38:53 CEST 2026
+#@# Smooth2 rh Fri Sep  4 13:38:55 CEST 2026
+#@# Inflation2 lh Fri Sep  4 13:38:57 CEST 2026
+#@# Inflation2 rh Fri Sep  4 13:39:05 CEST 2026
+#@# Curv .H and .K lh Fri Sep  4 13:39:12 CEST 2026
+#@# Curv .H and .K rh Fri Sep  4 13:39:45 CEST 2026
+#@# Sphere lh Fri Sep  4 13:40:19 CEST 2026
+#@# Sphere rh Fri Sep  4 13:42:27 CEST 2026
+#@# Surf Reg  Fri Sep  4 13:44:32 CEST 2026
+#@# Jacobian white lh Fri Sep  4 13:48:51 CEST 2026
+#@# Jacobian white rh Fri Sep  4 13:48:52 CEST 2026
+#@# AvgCurv lh Fri Sep  4 13:48:52 CEST 2026
+#@# AvgCurv rh Fri Sep  4 13:48:53 CEST 2026
+#@# Cortical Parc lh Fri Sep  4 13:48:53 CEST 2026
+#@# Cortical Parc rh Fri Sep  4 13:48:59 CEST 2026
+#@# Refine Pial Surfs w/ T2/FLAIR Fri Sep  4 13:54:50 CEST 2026
+#@# white curv lh Fri Sep  4 15:02:29 CEST 2026
+#@# white area lh Fri Sep  4 15:02:30 CEST 2026
+#@# pial curv lh Fri Sep  4 15:02:30 CEST 2026
+#@# pial area lh Fri Sep  4 15:02:31 CEST 2026
+#@# thickness lh Fri Sep  4 15:02:31 CEST 2026
+#@# area and vertex vol lh Fri Sep  4 15:02:50 CEST 2026
+#@# white curv rh Fri Sep  4 15:02:51 CEST 2026
+#@# white area rh Fri Sep  4 15:02:52 CEST 2026
+#@# pial curv rh Fri Sep  4 15:02:53 CEST 2026
+#@# pial area rh Fri Sep  4 15:02:54 CEST 2026
+#@# thickness rh Fri Sep  4 15:02:54 CEST 2026
+#@# area and vertex vol rh Fri Sep  4 15:03:14 CEST 2026
+#@# Curvature Stats lh Fri Sep  4 15:03:15 CEST 2026
+#@# Curvature Stats rh Fri Sep  4 15:03:16 CEST 2026
+#@# Cortical ribbon mask Fri Sep  4 15:03:17 CEST 2026
+#@# Cortical Parc 2 lh Fri Sep  4 15:05:47 CEST 2026
+#@# Cortical Parc 2 rh Fri Sep  4 15:05:55 CEST 2026
+#@# Cortical Parc 3 lh Fri Sep  4 15:06:03 CEST 2026
+#@# Cortical Parc 3 rh Fri Sep  4 15:06:09 CEST 2026
+#@# WM/GM Contrast lh Fri Sep  4 15:06:14 CEST 2026
+#@# WM/GM Contrast rh Fri Sep  4 15:06:17 CEST 2026
+#@# Relabel Hypointensities Fri Sep  4 15:06:19 CEST 2026
+#@# APas-to-ASeg Fri Sep  4 15:06:27 CEST 2026
+#@# AParc-to-ASeg aparc Fri Sep  4 15:06:31 CEST 2026
+#@# AParc-to-ASeg aparc.a2009s Fri Sep  4 15:06:55 CEST 2026
+#@# AParc-to-ASeg aparc.DKTatlas Fri Sep  4 15:07:18 CEST 2026
+#@# WMParc Fri Sep  4 15:07:41 CEST 2026
+#@# Parcellation Stats lh Fri Sep  4 15:08:38 CEST 2026
+#@# Parcellation Stats rh Fri Sep  4 15:08:41 CEST 2026
+#@# Parcellation Stats 2 lh Fri Sep  4 15:08:45 CEST 2026
+#@# Parcellation Stats 2 rh Fri Sep  4 15:08:47 CEST 2026
+#@# Parcellation Stats 3 lh Fri Sep  4 15:08:49 CEST 2026
+#@# Parcellation Stats 3 rh Fri Sep  4 15:08:50 CEST 2026
+#@# ASeg Stats Fri Sep  4 15:08:52 CEST 2026
+#@# BA_exvivo Labels lh Fri Sep  4 15:09:13 CEST 2026
+#@# BA_exvivo Labels rh Fri Sep  4 15:10:51 CEST 2026
+recon-all -s sub-01 finished without error at Fri Sep  4 15:12:29 CEST 2026

@@ -1,0 +1,96 @@
+8.2.0
+setenv SUBJECTS_DIR /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir
+cd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/scripts
+mri_segreg --mov /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/tmp.bbregister.179057/template.mgh --init-reg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/tmp.bbregister.179057/bbr.pass1.dat --out-reg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/T2raw.auto.dat --interp trilinear --wm-proj-abs 1 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/T2raw.auto.dat.mincost --dof 6 --nmax 36 --param /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/T2raw.auto.dat.param --surf white --brute -0.1 0.1 0.1 --cur-reg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/tmp.bbregister.179057/reg.curopt.dat --gm-proj-abs 2 --nsub 1 --gm-gt-wm 0.5 
+sysname  Linux
+hostname mini
+machine  x86_64
+user     ts
+movvol /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/tmp.bbregister.179057/template.mgh
+regfile /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/tmp.bbregister.179057/bbr.pass1.dat
+subject sub-01
+dof 6
+outregfile /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/T2raw.auto.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white
+GMProjAbs 2.000000
+WMProjAbs 1.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1789262426
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 0.00059   0.99981   0.01958  -0.66614;
+-0.99993   0.00035   0.01182   0.13561;
+ 0.01181  -0.01958   0.99974  -0.70686;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Initial costs ----------------
+Number of surface hits 281847
+WM  Intensity0   108.0073 +/-  17.5814
+Ctx Intensity0   190.5906 +/-  50.0282
+Pct Contrast0     52.6102 +/-  27.1295
+Cost   0.0418
+RelCost   0.0417
+
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.0422   0.0422  0.0
+     3  -0.1000  -0.1000  -0.1000  -0.1000   0.0000  -0.1000      0.0420   0.0420  0.0
+    17  -0.1000  -0.1000  -0.1000   0.0000   0.1000   0.1000      0.0417   0.0417  0.0
+    25  -0.1000  -0.1000  -0.1000   0.1000   0.1000   0.0000      0.0405   0.0405  0.0
+    26  -0.1000  -0.1000  -0.1000   0.1000   0.1000   0.1000      0.0405   0.0405  0.0
+   106  -0.1000   0.0000  -0.1000   0.1000   0.1000   0.0000      0.0400   0.0400  0.0
+   269   0.0000  -0.1000  -0.1000   0.1000   0.1000   0.1000      0.0388   0.0388  0.0
+
+Final costs ----------------
+Number of surface hits 281847
+WM  Intensity0   108.2387 +/-  17.5520
+Ctx Intensity0   190.6835 +/-  50.1567
+Pct Contrast0     52.4489 +/-  27.0517
+Cost   0.0403
+RelCost   0.0417
+Number of iterations    11
+Min cost was 0.040349
+RelMinCost   0.0402
+Number of FunctionCalls  1013
+OptimizationTime 22.862735 sec
+Parameters at optimum (transmm, rotdeg)
+-0.05237  0.07221  0.00074 -0.17007 -0.05075  0.06865 
+Number of surface hits 281847
+WM  Intensity   108.2387 +/-  17.5520
+Ctx Intensity   190.6835 +/-  50.1567
+Pct Contrast     52.4489 +/-  27.0517
+Cost at optimum   0.0403
+RelCostOptimum   0.0402
+nhits= 281847 wmmn=  108.2387 wmstd= 17.5520 constd=   27.0517 ctxmn=  190.6835 ctxstd= 50.1567 conmn =  52.4489 costmn =   0.0403 
+#C#  -0.052   0.072   0.001 -0.170 -0.051  0.069 0.000000 0.000000 0.040349 108.238711 190.683463 52.448871 0.000000 0.500000     1 0
+Reg at min cost was 
+ 0.00177   0.99982   0.01867  -0.71804;
+-0.99989   0.00149   0.01481   0.20492;
+ 0.01478  -0.01870   0.99972  -0.70710;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Original Reg - Optimal Reg
+-0.00118  -0.00002   0.00090   0.05190;
+-0.00004  -0.00114  -0.00299  -0.06931;
+-0.00297  -0.00088   0.00002   0.00024;
+ 0.00000   0.00000   0.00000   0.00000;
+
+Surface-RMS-Diff-mm 0.244812 0.090511 0.427109

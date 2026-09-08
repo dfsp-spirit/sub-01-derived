@@ -1,0 +1,86 @@
+Wed Mar 21 10:20:31 CET 2018
+setenv SUBJECTS_DIR /Users/timschaefer/data
+cd /Users/timschaefer/data/tim/surf
+/Applications/freesurfer/bin/mris_preproc --s tim --hemi lh --meas sulc --target fsaverage --out lh.sulc.fsaverage.mgh
+
+Darwin BloodyAwesome2.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+freesurfer-Darwin-OSX-stable-pub-v6.0.0-2beb96c
+tmpdir is ./tmp.mris_preproc.15481
+Src lh sphere.reg
+Trg lh sphere.reg
+
+\n\n
+---------------------------------------------------
+#@# 1/1 tim Wed Mar 21 10:20:31 CET 2018 --------------
+-----------------------
+mri_surf2surf --srcsubject tim --srchemi lh --srcsurfreg sphere.reg --trgsubject fsaverage --trghemi lh --trgsurfreg sphere.reg --tval ./tmp.mris_preproc.15481/tim.1.mgh --sval /Users/timschaefer/data/tim/surf/lh.sulc --sfmt curv --noreshape --cortex
+Source registration surface changed to sphere.reg
+Target registration surface changed to sphere.reg
+
+$Id: mri_surf2surf.c,v 1.103 2015/11/05 22:07:33 greve Exp $
+
+setenv SUBJECTS_DIR /Users/timschaefer/data
+cd /Users/timschaefer/data/tim/surf
+mri_surf2surf --srcsubject tim --srchemi lh --srcsurfreg sphere.reg --trgsubject fsaverage --trghemi lh --trgsurfreg sphere.reg --tval ./tmp.mris_preproc.15481/tim.1.mgh --sval /Users/timschaefer/data/tim/surf/lh.sulc --sfmt curv --noreshape --cortex 
+
+sysname  Darwin
+hostname BloodyAwesome2.local
+machine  x86_64
+user     timschaefer
+srcsubject = tim
+srcval     = /Users/timschaefer/data/tim/surf/lh.sulc
+srctype    = curv
+trgsubject = fsaverage
+trgval     = ./tmp.mris_preproc.15481/tim.1.mgh
+trgtype    = 
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+srchemi    = lh
+trghemi    = lh
+frame      = 0
+fwhm-in    = 0
+fwhm-out   = 0
+label-src  = lh.cortex.label
+label-trg  = lh.cortex.label
+OKToRevFaceOrder  = 1
+UseDualHemi = 0
+Reading source surface reg /Users/timschaefer/data/tim/surf/lh.sphere.reg
+Loading source data
+Reading curvature file /Users/timschaefer/data/tim/surf/lh.sulc
+Reading source subject label mask lh.cortex.label
+masking the input
+Reading target surface reg /Users/timschaefer/data/fsaverage/surf/lh.sphere.reg
+Done
+Using surf2surf_nnfr()
+Mapping Source Volume onto Source Subject Surface
+surf2surf_nnfr: building source hash (res=16).
+Surf2Surf: Forward Loop (163842)
+
+surf2surf_nnfr: building target hash (res=16).
+Surf2Surf: Reverse Loop (149244)
+Reverse Loop had 27415 hits
+Surf2Surf: Dividing by number of hits (163842)
+INFO: nSrcLost = 0
+nTrg121 = 141919, nTrgMulti = 21923, MnTrgMultiHits = 2.25051
+nSrc121 = 114940, nSrcLost =     0, nSrcMulti = 34304, MnSrcMultiHits = 2.22473
+Reading target space mask label lh.cortex.label
+masking the input
+Saving target data
+Saving to ./tmp.mris_preproc.15481/tim.1.mgh
+\n\n
+-----------------------
+mri_concat ./tmp.mris_preproc.15481/tim.1.mgh --o lh.sulc.fsaverage.mgh
+ninputs = 1
+Checking inputs
+nframestot = 1
+Allocing output
+Done allocing
+nframes = 1
+Writing to lh.sulc.fsaverage.mgh
+\n\n
+Cleaning up
+-----------------------
+rm -r ./tmp.mris_preproc.15481
+Wed Mar 21 10:20:37 CET 2018
+mris_preproc done

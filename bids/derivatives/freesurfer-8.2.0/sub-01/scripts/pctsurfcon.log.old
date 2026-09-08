@@ -1,0 +1,9 @@
+Logfile for pctsurfcon
+Fri Sep  4 15:06:14 CEST 2026
+setenv SUBJECTS_DIR /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir
+cd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/scripts
+/home/ts/software/freesurfer/freesurfer8.2.0/bin/pctsurfcon
+pctsurfcon 8.2.0
+Linux mini 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /home/ts/software/freesurfer/freesurfer8.2.0
+Cleaning up

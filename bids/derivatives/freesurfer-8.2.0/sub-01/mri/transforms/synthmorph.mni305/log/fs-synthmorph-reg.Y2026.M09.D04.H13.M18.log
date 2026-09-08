@@ -1,0 +1,71 @@
+Log file for fs-synthmorph-reg
+Fri Sep  4 13:18:01 CEST 2026
+
+setenv SUBJECTS_DIR /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir
+cd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01
+/home/ts/software/freesurfer/freesurfer8.2.0/bin/fs-synthmorph-reg --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/synthstrip.mgz --t /home/ts/software/freesurfer/freesurfer8.2.0/average/mni305.cor.stripped.mgz --affine-only --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305 --threads 8
+-rwxr-xr-x 1 ts ts 30896 Mar 14 14:56 /home/ts/software/freesurfer/freesurfer8.2.0/bin/fs-synthmorph-reg
+
+freesurfer-linux-ubuntu24_x86_64-8.2.0-20260314-d932c45
+$Id$
+Linux mini 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+pid 142599
+Fri Sep  4 13:18:01 CEST 2026
+
+
+
+mri_synthmorph -m affine -t /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/aff.lta /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/synthstrip.mgz /home/ts/software/freesurfer/freesurfer8.2.0/average/mni305.cor.stripped.mgz -j 8
+#@# mri_synthmorph: affine, threads: 8, VmPeak: 12245764
+Thank you for choosing SynthMorph. Please cite us!
+
+SynthMorph: learning contrast-invariant registration without acquired images
+Hoffmann M, Billot B, Greve DN, Iglesias JE, Fischl B, Dalca AV
+IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+https://doi.org/10.1109/TMI.2021.3116879
+
+Anatomy-specific acquisition-agnostic affine registration learned from
+fictitious images
+Hoffmann M, Hoopes A, Fischl B*, Dalca AV* (*equal contribution)
+SPIE Medical Imaging: Image Processing, 12464, 1246402, 2023
+https://doi.org/10.1117/12.2653251
+https://synthmorph.io/#papers (PDF)
+
+Anatomy-aware and acquisition-agnostic joint registration with SynthMorph
+Hoffmann M, Hoopes A, Greve DN, Fischl B*, Dalca AV* (*equal contribution)
+Imaging Neuroscience, 2, 1-33, 2024
+https://doi.org/10.1162/imag_a_00197
+
+Website: https://synthmorph.io
+@#@FSTIME  2026:09:04:13:18:01 mri_synthmorph N 8 e 18.12 S 6.07 U 40.67 P 257% M 9308056 F 2588 R 2351049 W 0 c 924 w 25668 I 1333744 O 1944 L 3.27 1.57 1.16
+@#@FSLOADPOST 2026:09:04:13:18:19 mri_synthmorph N 8 3.27 1.68 1.20
+lta_convert --invert --inlta /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/aff.lta --outlta /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/reg.targ_to_invol.lta
+8.2.0
+
+--invert: will invert transform.
+--inlta: /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/aff.lta input LTA transform.
+--outlta: /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/reg.targ_to_invol.lta output LTA.
+ LTA read, type : 1
+ 1.05462   0.04074   0.02329  -0.43121;
+-0.04490   0.89809   0.31822  -19.55266;
+ 0.00972  -0.37940   1.06831   11.89845;
+ 0.00000   0.00000   0.00000   1.00000;
+Writing  LTA to file /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/reg.targ_to_invol.lta...
+lta_convert successful.
+@#@FSTIME  2026:09:04:13:18:19 lta_convert N 5 e 0.14 S 0.00 U 0.00 P 6% M 9588 F 28 R 339 W 0 c 2 w 45 I 5768 O 8 L 3.27 1.68 1.20
+@#@FSLOADPOST 2026:09:04:13:18:19 lta_convert N 5 3.27 1.68 1.20
+
+
+
+
+To check affine registration
+tkregisterfv --mov /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/synthstrip.mgz --targ /home/ts/software/freesurfer/freesurfer8.2.0/average/mni305.cor.stripped.mgz --reg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.mni305/aff.lta
+
+AffineOnly specified, so exiting now
+ 
+Started at Fri Sep 4 13:18:01 CEST 2026 
+Ended   at Fri Sep  4 13:18:19 CEST 2026
+Fs-Synthmorph-Reg-Run-Time-Sec 18
+Fs-Synthmorph-Reg-Run-Time-Min 0.30
+Fs-Synthmorph-Reg-Run-Time-Hours 0.00
+ 
+fs-synthmorph-reg Done

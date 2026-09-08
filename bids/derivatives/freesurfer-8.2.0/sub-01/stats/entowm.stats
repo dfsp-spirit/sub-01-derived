@@ -1,0 +1,10 @@
+# Subcortical Limbic Volumetric Stats
+# Created by mri_sclimbic_seg
+# Measure EstimatedTotalIntraCranialVol, eTIV, Estimated Total Intracranial Volume, 1706697.206585, mm^3
+# NRows 4
+# NTableCols 5
+# ColHeaders Index SegId NVoxels Volume_mm3 StructName
+1      3006  1165   1178.1941    wm-lh-entorhinal
+2      3201   314    315.0857    wm-lh-gyrus-ambiens
+3      4006  1091   1113.1794    wm-rh-entorhinal
+4      4201   314    319.8936    wm-rh-gyrus-ambiens

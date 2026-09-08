@@ -1,0 +1,13 @@
+{
+  "Name": "FreeSurfer 6.0 Output for sub-01 (MacOS High Sierra)",
+  "BIDSVersion": "1.8.0",
+  "DatasetType": "derivative",
+  "GeneratedBy": [
+    {
+      "Name": "FreeSurfer",
+      "Version": "6.0",
+      "Description": "Cortical reconstruction via recon-all",
+      "CodeURL": "https://surfer.nmr.mgh.harvard.edu/"
+    }
+  ]
+}

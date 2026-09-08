@@ -1,0 +1,60 @@
+# Title Segmentation Statistics 
+# 
+# generating_program mri_segstats
+# cvs_version 8.2.0
+# cmdline mri_segstats --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz --seg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz --sum /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/stats/vsinus.stats --subject sub-01 --etiv 
+# sysname  Linux
+# hostname mini
+# machine  x86_64
+# user     ts
+# anatomy_type volume
+# 
+# SUBJECTS_DIR /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir
+# subjectname sub-01
+# Measure EstimatedTotalIntraCranialVol, eTIV, Estimated Total Intracranial Volume, 1706697.254474, mm^3
+# SegVolFile /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz 
+# SegVolFileTimeStamp  2026/09/04 13:24:31 
+# InVolFile  /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz 
+# InVolFileTimeStamp  2026/09/04 13:23:23 
+# InVolFrame 0 
+# ExcludeSegId 0 
+# Only reporting non-empty segmentations
+# VoxelVolume_mm3 1 
+# TableCol  1 ColHeader Index 
+# TableCol  1 FieldName Index 
+# TableCol  1 Units     NA 
+# TableCol  2 ColHeader SegId 
+# TableCol  2 FieldName Segmentation Id
+# TableCol  2 Units     NA
+# TableCol  3 ColHeader NVoxels 
+# TableCol  3 FieldName Number of Voxels
+# TableCol  3 Units     unitless
+# TableCol  4 ColHeader Volume_mm3
+# TableCol  4 FieldName Volume
+# TableCol  4 Units     mm^3
+# TableCol  5 ColHeader StructName
+# TableCol  5 FieldName Structure Name
+# TableCol  5 Units     NA
+# TableCol  6 ColHeader Mean 
+# TableCol  6 FieldName Intensity Mean
+# TableCol  6 Units     unknown
+# TableCol  7 ColHeader StdDev
+# TableCol  7 FieldName Intensity StdDev
+# TableCol  7 Units     unknown
+# TableCol  8 ColHeader Min
+# TableCol  8 FieldName Intensity Min
+# TableCol  8 Units     unknown
+# TableCol  9 ColHeader Max
+# TableCol  9 FieldName Intensity Max
+# TableCol  9 Units     unknown
+# TableCol 10 ColHeader Range
+# TableCol 10 FieldName Intensity Range
+# TableCol 10 Units     unknown
+# NRows 5 
+# NTableCols 10 
+# ColHeaders  Index SegId NVoxels Volume_mm3 StructName Mean StdDev Min Max Range  
+  1 6111      2492     2492.0  Left-Transverse-Sinus             55.0088     9.3696    29.0000    93.0000    64.0000 
+  2 6112      4727     4727.0  Right-Transverse-Sinus            59.3112     7.4903    34.0000    93.0000    59.0000 
+  3 6115       549      549.0  Straight-Sinus                    62.9672     9.9121    38.0000    91.0000    53.0000 
+  4 6116      3237     3237.0  Superior-Sinus-P                  60.5582     9.2571    30.0000   103.0000    73.0000 
+  5 6117      5324     5324.0  Superior-Sinus-D                  62.1702     9.7372    28.0000   106.0000    78.0000 

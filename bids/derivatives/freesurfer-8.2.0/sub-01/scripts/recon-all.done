@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT sub-01
+START_TIME Fri Sep 4 13:16:49 CEST 2026
+END_TIME Fri Sep 4 15:12:29 CEST 2026
+RUNTIME_HOURS 1.928
+USER ts
+HOST mini
+PROCESSOR x86_64
+OS Linux
+UNAME Linux mini 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+VERSION 8.2.0 (freesurfer-linux-ubuntu24_x86_64-8.2.0-20260314-d932c45)
+CMDPATH /home/ts/software/freesurfer/freesurfer8.2.0/bin/recon-all
+CMDARGS -s sub-01 -i ./DICOM/0002_MR000004.dcm -T2 ./DICOM/0004_MR000388.dcm -T2pial -all -threads 8

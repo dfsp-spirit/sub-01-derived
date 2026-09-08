@@ -1,0 +1,200 @@
+Log file for mri_vsinus_seg
+Fri Sep  4 13:24:22 CEST 2026
+
+setenv SUBJECTS_DIR /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir
+cd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+/home/ts/software/freesurfer/freesurfer8.2.0/bin/mri_vsinus_seg --s sub-01 --rca-synthseg --threads 8 --synthmorphdir /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.1.0mm.1.0mm
+-rwxr-xr-x 1 ts ts 20960 Mar 14 14:56 /home/ts/software/freesurfer/freesurfer8.2.0/bin/mri_vsinus_seg
+
+freesurfer-linux-ubuntu24_x86_64-8.2.0-20260314-d932c45
+$Id$
+Linux mini 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+pid 148497
+mri_vol2vol --mov /home/ts/software/freesurfer/freesurfer8.2.0/average/vsinus.no-sp.prior.mni152.1.0mm.mgz --lta /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.1.0mm.1.0mm/reg.targ_to_invol.lta --targ /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mgz
+
+Matrix from LTA:
+-1.10217  -0.03459  -0.02047   1.97433;
+ 0.00837  -0.40795   1.12642  -73.62070;
+ 0.02708  -0.94148  -0.27441  -12.12071;
+ 0.00000   0.00000   0.00000   1.00000;
+
+/home/ts/software/freesurfer/freesurfer8.2.0/average/vsinus.no-sp.prior.mni152.1.0mm.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz
+movvol /home/ts/software/freesurfer/freesurfer8.2.0/average/vsinus.no-sp.prior.mni152.1.0mm.mgz
+targvol /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz
+outvol /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mgz
+regfile /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/transforms/synthmorph.1.0mm.1.0mm/reg.targ_to_invol.lta
+invert 0
+tal    0
+talres 2
+regheader 0
+noresample 0
+interp  trilinear (1)
+precision  float (3)
+Gdiag_no  -1
+Synth      0
+SynthSeed  1788750346
+
+Final tkRAS-to-tkRAS Matrix is:
+-1.10217  -0.03459  -0.02047   1.97430;
+ 0.00837  -0.40795   1.12642  -73.62067;
+ 0.02708  -0.94148  -0.27441  -12.12073;
+ 0.00000   0.00000   0.00000   1.00000;
+
+
+Vox2Vox Matrix is:
+-1.10217  -0.02047   0.03459   233.79556;
+ 0.02708  -0.27441   0.94148   37.76894;
+-0.00837  -1.12642  -0.40795   220.34955;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Resampling
+Output registration matrix is identity
+
+mri_vol2vol done
+mri_mask -T .001 -crop 0 /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mincrop.mgz
+threshold mask volume at 0.001
+cropping npad = 0
+DoAbs = 0
+Found 93319 voxels in mask (pct=  0.56)
+Computing bounding box, npad = 0, 0, 0, 0, 0, 0
+62 9 11  125 137 85
+maskval=0, outval=0
+Writing masked volume to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mincrop.mgz...done.
+mri_binarize --crop-around-ras /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/invol.crop-to-prior.norev.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz nolta cras /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mincrop.mgz 0 144 144 144
+Getting cras from /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/native.avg12567.prior.mincrop.mgz
+final ras2vox matrix
+-1.00000  -0.00000  -0.00000   127.50005;
+-0.00000  -0.00000  -1.00000   79.09527;
+-0.00000   1.00000  -0.00000   98.62723;
+-0.00000  -0.00000  -0.00000   1.00000;
+--------------------------
+ostr LIA (144 144 144) (144 144 144)
+rasCenter 3.00005 -45.1272 1.59527
+crsCenter 124.5 77.5 53.5
+MRIcropAroundCRS()
+vol size 256 256 256
+center 124.5 77.5 53.5
+fov 144 144 144
+limits 54 197   7 150   -18 125
+P0 73.5 -116.627 72.0953
+c_ras of new volume 1.50005 -44.6272 0.0952682
+mri_sclimbic_seg --model /home/ts/software/freesurfer/freesurfer8.2.0/models/vsinus.no-sp.m.all.nstd10-070.h5 --ctab /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.no-sp.ctab --keep_ac --conform --percentile 99.9 --vmp --output-base vsinus --logfile mri_vsinus_seg.log --fov 144 --threads 8 --no-cite-sclimbic --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/invol.crop-to-prior.norev.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.crop-to-prior.norev.mgz
+/home/ts/software/freesurfer/freesurfer8.2.0/python/scripts/mri_sclimbic_seg --model /home/ts/software/freesurfer/freesurfer8.2.0/models/vsinus.no-sp.m.all.nstd10-070.h5 --ctab /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.no-sp.ctab --keep_ac --conform --percentile 99.9 --vmp --output-base vsinus --logfile mri_vsinus_seg.log --fov 144 --threads 8 --no-cite-sclimbic --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/invol.crop-to-prior.norev.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.crop-to-prior.norev.mgz
+Keeping anterior commissure in vols and stats
+Using CPU
+Using 8 thread(s)
+Loaded lookup table /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.no-sp.ctab
+Loaded population stats /home/ts/software/freesurfer/freesurfer8.2.0/models/sclimbic.volstats.csv
+nb_labels 6
+inshape (144, 144, 144) features 24
+  (None, 144, 144, 144, 1)
+Loading weights from /home/ts/software/freesurfer/freesurfer8.2.0/models/vsinus.no-sp.m.all.nstd10-070.h5 -----------------------
+Done loading weights -----------------------
+Loaded model weights /home/ts/software/freesurfer/freesurfer8.2.0/models/vsinus.no-sp.m.all.nstd10-070.h5
+
+Segmenting image 1/1
+Loaded input image from /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/invol.crop-to-prior.norev.mgz
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 1s 1s/step
+Wrote segmentation to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.crop-to-prior.norev.mgz
+vmpcma: 9318068
+done
+mri_binarize --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/synthseg.rca.mgz --match 3 42 --inv --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/ctxsegmask.mgz
+
+8.2.0
+cwd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+cmdline mri_binarize --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/synthseg.rca.mgz --match 3 42 --inv --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/ctxsegmask.mgz 
+sysname  Linux
+hostname mini
+machine  x86_64
+user     ts
+
+input      /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/synthseg.rca.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/ctxsegmask.mgz
+Binarizing based on matching values
+nMatch 2
+ 0     3
+ 1    42
+binval        0
+binvalnot     1
+fstart = 0, fend = 0, nframes = 1
+Found 584575 values in range
+Counting number of voxels in first frame
+Found 584575 voxels in final mask
+Writing output to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/ctxsegmask.mgz
+Count: 584575 584575.000000 16777216 3.484339
+mri_binarize done
+mri_vol2vol --mov /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.crop-to-prior.norev.mgz --targ /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz --interp nearest --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz --regheader
+movvol /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/vsinus.crop-to-prior.norev.mgz
+targvol /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz
+outvol /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz
+invert 0
+tal    0
+talres 2
+regheader 1
+noresample 0
+interp  nearest (0)
+precision  float (3)
+Gdiag_no  -1
+Synth      0
+SynthSeed  1788614233
+
+Computing registration based on scanner-to-scanner
+
+Final tkRAS-to-tkRAS Matrix is:
+ 1.00000   0.00000   0.00000  -2.00000;
+ 0.00000   1.00000   0.00000   74.00000;
+ 0.00000   0.00000   1.00000  -49.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+
+Vox2Vox Matrix is:
+ 1.00000   0.00000   0.00000  -54.00000;
+ 0.00000   1.00000   0.00000  -7.00000;
+ 0.00000   0.00000   1.00000   18.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+Resampling
+Output registration matrix is identity
+
+mri_vol2vol done
+mri_mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/tmp.vsinus/ctxsegmask.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz
+DoAbs = 0
+maskval=0, outval=0
+Writing masked volume to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz...done.
+mri_segstats --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz --seg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz --sum /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/stats/vsinus.stats --subject sub-01 --etiv
+
+8.2.0
+cwd 
+cmdline mri_segstats --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz --seg /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz --sum /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/stats/vsinus.stats --subject sub-01 --etiv 
+sysname  Linux
+hostname mini
+machine  x86_64
+user     ts
+whitesurfname  white
+UseRobust  0
+atlas_icv (eTIV) = 1706697 mm^3    (det: 1.141448 )
+Loading /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz
+Using embedded color table (and excluding seg 0)
+Loading /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found   6 segmentations
+Computing statistics for each segmentation
+
+Reporting on   5 segmentations
+Using PrintSegStat
+mri_segstats done
+
+fsvglrun freeview --hide-3d-slices --view coronal -neuro-view /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/nu.mgz:lock=1 /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/vsinus.mgz:isosurface=1:outline=1
+
+ 
+Started at Fri Sep 4 13:24:22 CEST 2026 
+Ended   at Fri Sep  4 13:24:32 CEST 2026
+Mri_Vsinus_Seg-Run-Time-Sec 10
+Mri_Vsinus_Seg-Run-Time-Min 0.17
+Mri_Vsinus_Seg-Run-Time-Hours 0.00
+ 
+mri_vsinus_seg Done

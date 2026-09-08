@@ -1,0 +1,10 @@
+-s
+sub-01
+-i
+./DICOM/0002_MR000004.dcm
+-T2
+./DICOM/0004_MR000388.dcm
+-T2pial
+-all
+-threads
+8

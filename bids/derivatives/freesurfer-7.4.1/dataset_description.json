@@ -1,0 +1,13 @@
+{
+  "Name": "FreeSurfer 7.4.1 Output for sub-01 (Ubuntu 24 LTS)",
+  "BIDSVersion": "1.8.0",
+  "DatasetType": "derivative",
+  "GeneratedBy": [
+    {
+      "Name": "FreeSurfer",
+      "Version": "7.4.1",
+      "Description": "Cortical reconstruction via recon-all",
+      "CodeURL": "https://surfer.nmr.mgh.harvard.edu/"
+    }
+  ]
+}

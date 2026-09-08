@@ -1,0 +1,232 @@
+Log file for label-cortex
+Fri Sep  4 13:38:30 CEST 2026
+
+setenv SUBJECTS_DIR /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir
+cd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+/home/ts/software/freesurfer/freesurfer8.2.0/bin/label-cortex --s sub-01 --rh --fix-ga
+-rwxr-xr-x 1 ts ts 14265 Mar 14 14:56 /home/ts/software/freesurfer/freesurfer8.2.0/bin/label-cortex
+
+freesurfer-linux-ubuntu24_x86_64-8.2.0-20260314-d932c45
+$Id$
+Linux mini 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+pid 165848
+mri_label2label --label-cortex /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/aseg.presurf.mgz 0 /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.cortex-no-ga.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+3 non-cortical segments detected
+only using segment with 9117 vertices
+erasing segment 1 (vno[0] = 52363)
+erasing segment 2 (vno[0] = 92313)
+mri_binarize --match 4201 --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/entowm.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/gyrus-ambiens.rh.mgz
+
+8.2.0
+cwd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+cmdline mri_binarize --match 4201 --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/entowm.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/gyrus-ambiens.rh.mgz 
+sysname  Linux
+hostname mini
+machine  x86_64
+user     ts
+
+input      /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/entowm.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/gyrus-ambiens.rh.mgz
+Binarizing based on matching values
+nMatch 1
+ 0  4201
+binval        1
+binvalnot     0
+fstart = 0, fend = 0, nframes = 1
+Found 314 values in range
+Counting number of voxels in first frame
+Found 314 voxels in final mask
+Writing output to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/gyrus-ambiens.rh.mgz
+Count: 314 314.000000 16777216 0.001872
+mri_binarize done
+mri_vol2surf --regheader sub-01 --hemi rh --surf white.preaparc --mov /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/gyrus-ambiens.rh.mgz --projdist-max -1 0 .1 --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz
+
+INFO: Delta=0.1 > Max=0, may be ok, maybe not
+
+srcvol = /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/gyrus-ambiens.rh.mgz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white.preaparc
+hemi = rh
+ProjDist = 0.5
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 1
+INFO: float2int code = 0
+INFO: changing type to float
+Done loading volume
+Computing registration from header.
+  Using /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+ 1.00000   0.00000   0.00000   0.00000;
+ 0.00000   1.00000   0.00000   0.00000;
+ 0.00000   0.00000   1.00000   0.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc
+Done reading source surface
+Mapping Source Volume onto Source Subject Surface
+Projecting -1 0 0.1
+ 1 -1 -1 0
+using old
+ 2 -0.9 -1 0
+using old
+ 3 -0.8 -1 0
+using old
+ 4 -0.7 -1 0
+using old
+ 5 -0.6 -1 0
+using old
+ 6 -0.5 -1 0
+using old
+ 7 -0.4 -1 0
+using old
+ 8 -0.3 -1 0
+using old
+ 9 -0.2 -1 0
+using old
+10 -0.0999999 -1 0
+using old
+Done mapping volume to surface
+Number of source voxels hit = 101777
+Writing to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz
+Dim: 151816 1 1
+Copying color table to the output
+mri_vol2surf done
+mris_convert --to-scanner -n /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz
+mris_convert --to-scanner -n /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz 
+Reading in /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc
+Converting surface XYZ coordinates from tkr to scanner space.
+Outputting normals /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz
+mri_binarize --frame 0 --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz --mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz --max -0.01
+
+8.2.0
+cwd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+cmdline mri_binarize --frame 0 --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz --mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz --max -0.01 
+sysname  Linux
+hostname mini
+machine  x86_64
+user     ts
+
+input      /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz
+Binarizing based on threshold
+min        -infinity
+max        -0.01
+binval        1
+binvalnot     0
+mask       /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz
+maskthresh 0.500000
+Loading mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz
+fstart = 0, fend = 0, nframes = 1
+Found 341 values in range
+Counting number of voxels in first frame
+Found 341 voxels in final mask
+Writing output to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz
+Count: 341 341.000000 151816 0.224614
+mri_binarize done
+mri_binarize --frame 2 --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz --mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz --max -0.01
+
+8.2.0
+cwd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+cmdline mri_binarize --frame 2 --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz --mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz --o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz --max -0.01 
+sysname  Linux
+hostname mini
+machine  x86_64
+user     ts
+
+input      /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.white.preaparc.nxyz.mgz
+frame      2
+nErode3d   0
+nErode2d   0
+output     /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz
+Binarizing based on threshold
+min        -infinity
+max        -0.01
+binval        1
+binvalnot     0
+mask       /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz
+maskthresh 0.500000
+Loading mask /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.mgz
+fstart = 2, fend = 2, nframes = 1
+Found 252 values in range
+Counting number of voxels in first frame
+Found 252 voxels in final mask
+Writing output to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz
+Count: 252 252.000000 151816 0.165990
+mri_binarize done
+fscalc /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz and /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz -o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz
+Fri Sep  4 13:38:43 CEST 2026
+
+cd /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/mri
+/home/ts/software/freesurfer/freesurfer8.2.0/bin/fscalc /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz and /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz -o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz
+
+freesurfer-linux-ubuntu24_x86_64-8.2.0-20260314-d932c45
+Linux mini 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+mri_convert /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh
+mri_convert /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh 
+reading from /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nx.mask.mgz...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+writing to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh...
+----------------------
+mris_calc -o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh and /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.nz.mask.mgz
+Packing
+Done packing
+Packing
+Done packing
+Unpacking
+Saving result to '/home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh' (type = MGH )                       [ ok ]
+#VMPC# mris_calc VmPeak  89764
+----------------------
+mri_convert /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz
+mri_convert /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz 
+reading from /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/tmp.FxzgLH/tmp.mgh...
+TR=0.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 0, -1)
+k_ras = (0, 1, 0)
+writing to /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz...
+mri_cor2label --i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz --l /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.med.label --surf-path /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc --id 1 --thresh 0.5
+Loading mri /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.lat.mask.mgz
+8.2.0
+------- Vox2RAS of input volume -----------
+-1.00000   0.00000   0.00000   75908.00000;
+ 0.00000   0.00000   1.00000  -0.50000;
+ 0.00000  -1.00000   0.00000   0.50000;
+ 0.00000   0.00000   0.00000   1.00000;
+Scanning the volume
+mri_cor2label completed SUCCESSFULLY
+Loading surf /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc
+Found 243 label voxels
+Writing label file /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.med.label
+Centroid:  17.18   -7.27   19.21 
+mri_mergelabels -i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.cortex-no-ga.label -i /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/tmpdir.label-cortex.165848/rh.gyrus-ambiens.med.label -o /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/rh.cortex.label
+Done
+
+To view results, run
+fsvglrun freeview -f /home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/surf/rh.white.preaparc:label=/home/ts/develop/sub-01/derived/FreeSurfer/8.2.0/subjects_dir/sub-01/label/rh.cortex.label
+
+
+ 
+Started at Fri Sep 4 13:38:30 CEST 2026 
+Ended   at Fri Sep  4 13:38:43 CEST 2026
+Label-Cortex-Run-Time-Sec 13
+Label-Cortex-Run-Time-Min 0.22
+Label-Cortex-Run-Time-Hours 0.00
+ 
+label-cortex Done

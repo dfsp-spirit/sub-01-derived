@@ -1,0 +1,83 @@
+status file for recon-all
+Fri Sep  4 10:53:34 CEST 2026
+#@# T2/FLAIR Input Fri Sep  4 10:53:36 CEST 2026
+#@# MotionCor Fri Sep  4 10:53:38 CEST 2026
+#@# Talairach Fri Sep  4 10:53:44 CEST 2026
+#@# Talairach Failure Detection Fri Sep  4 10:56:00 CEST 2026
+#@# Nu Intensity Correction Fri Sep  4 10:56:00 CEST 2026
+#@# Intensity Normalization Fri Sep  4 10:58:04 CEST 2026
+#@# Skull Stripping Fri Sep  4 10:58:51 CEST 2026
+#@# EM Registration Fri Sep  4 11:00:05 CEST 2026
+#@# CA Normalize Fri Sep  4 11:00:59 CEST 2026
+#@# CA Reg Fri Sep  4 11:01:33 CEST 2026
+#@# SubCort Seg Fri Sep  4 11:24:39 CEST 2026
+#@# CC Seg Fri Sep  4 11:41:45 CEST 2026
+#@# Merge ASeg Fri Sep  4 11:42:01 CEST 2026
+#@# Intensity Normalization2 Fri Sep  4 11:42:01 CEST 2026
+#@# Mask BFS Fri Sep  4 11:43:09 CEST 2026
+#@# WM Segmentation Fri Sep  4 11:43:10 CEST 2026
+#@# Fill Fri Sep  4 11:44:16 CEST 2026
+#@# Tessellate lh Fri Sep  4 11:44:46 CEST 2026
+#@# Tessellate rh Fri Sep  4 11:44:48 CEST 2026
+#@# Smooth1 lh Fri Sep  4 11:44:50 CEST 2026
+#@# Smooth1 rh Fri Sep  4 11:44:51 CEST 2026
+#@# Inflation1 lh Fri Sep  4 11:44:52 CEST 2026
+#@# Inflation1 rh Fri Sep  4 11:44:58 CEST 2026
+#@# QSphere lh Fri Sep  4 11:45:04 CEST 2026
+#@# QSphere rh Fri Sep  4 11:45:41 CEST 2026
+#@# Fix Topology lh Fri Sep  4 11:46:24 CEST 2026
+#@# Fix Topology rh Fri Sep  4 11:50:46 CEST 2026
+#@# Smooth2 lh Fri Sep  4 11:55:43 CEST 2026
+#@# Smooth2 rh Fri Sep  4 11:55:45 CEST 2026
+#@# Inflation2 lh Fri Sep  4 11:55:47 CEST 2026
+#@# Inflation2 rh Fri Sep  4 11:55:54 CEST 2026
+#@# Curv .H and .K lh Fri Sep  4 11:56:01 CEST 2026
+#@# Curv .H and .K rh Fri Sep  4 11:56:32 CEST 2026
+#@# Sphere lh Fri Sep  4 11:57:04 CEST 2026
+#@# Sphere rh Fri Sep  4 11:59:18 CEST 2026
+#@# Surf Reg lh Fri Sep  4 12:00:44 CEST 2026
+#@# Surf Reg rh Fri Sep  4 12:03:01 CEST 2026
+#@# Jacobian white lh Fri Sep  4 12:05:00 CEST 2026
+#@# Jacobian white rh Fri Sep  4 12:05:00 CEST 2026
+#@# AvgCurv lh Fri Sep  4 12:05:01 CEST 2026
+#@# AvgCurv rh Fri Sep  4 12:05:01 CEST 2026
+#@# Cortical Parc lh Fri Sep  4 12:05:02 CEST 2026
+#@# Cortical Parc rh Fri Sep  4 12:05:08 CEST 2026
+#@# Refine Pial Surfs w/ T2/FLAIR Fri Sep  4 12:11:02 CEST 2026
+#@# white curv lh Fri Sep  4 12:45:51 CEST 2026
+#@# white area lh Fri Sep  4 12:45:52 CEST 2026
+#@# pial curv lh Fri Sep  4 12:45:52 CEST 2026
+#@# pial area lh Fri Sep  4 12:45:53 CEST 2026
+#@# thickness lh Fri Sep  4 12:45:54 CEST 2026
+#@# area and vertex vol lh Fri Sep  4 12:46:12 CEST 2026
+#@# white curv rh Fri Sep  4 12:46:13 CEST 2026
+#@# white area rh Fri Sep  4 12:46:14 CEST 2026
+#@# pial curv rh Fri Sep  4 12:46:14 CEST 2026
+#@# pial area rh Fri Sep  4 12:46:15 CEST 2026
+#@# thickness rh Fri Sep  4 12:46:16 CEST 2026
+#@# area and vertex vol rh Fri Sep  4 12:46:34 CEST 2026
+#@# Curvature Stats lh Fri Sep  4 12:46:35 CEST 2026
+#@# Curvature Stats rh Fri Sep  4 12:46:36 CEST 2026
+#@# Cortical ribbon mask Fri Sep  4 12:46:37 CEST 2026
+#@# Cortical Parc 2 lh Fri Sep  4 12:50:42 CEST 2026
+#@# Cortical Parc 2 rh Fri Sep  4 12:50:50 CEST 2026
+#@# Cortical Parc 3 lh Fri Sep  4 12:50:58 CEST 2026
+#@# Cortical Parc 3 rh Fri Sep  4 12:51:03 CEST 2026
+#@# WM/GM Contrast lh Fri Sep  4 12:51:09 CEST 2026
+#@# WM/GM Contrast rh Fri Sep  4 12:51:11 CEST 2026
+#@# Relabel Hypointensities Fri Sep  4 12:51:14 CEST 2026
+#@# APas-to-ASeg Fri Sep  4 12:51:21 CEST 2026
+#@# AParc-to-ASeg aparc Fri Sep  4 12:51:27 CEST 2026
+#@# AParc-to-ASeg aparc.a2009s Fri Sep  4 12:51:50 CEST 2026
+#@# AParc-to-ASeg aparc.DKTatlas Fri Sep  4 12:52:13 CEST 2026
+#@# WMParc Fri Sep  4 12:52:36 CEST 2026
+#@# Parcellation Stats lh Fri Sep  4 12:55:01 CEST 2026
+#@# Parcellation Stats rh Fri Sep  4 12:55:14 CEST 2026
+#@# Parcellation Stats 2 lh Fri Sep  4 12:55:26 CEST 2026
+#@# Parcellation Stats 2 rh Fri Sep  4 12:55:33 CEST 2026
+#@# Parcellation Stats 3 lh Fri Sep  4 12:55:40 CEST 2026
+#@# Parcellation Stats 3 rh Fri Sep  4 12:55:46 CEST 2026
+#@# ASeg Stats Fri Sep  4 12:55:52 CEST 2026
+#@# BA_exvivo Labels lh Fri Sep  4 12:56:16 CEST 2026
+#@# BA_exvivo Labels rh Fri Sep  4 12:57:56 CEST 2026
+recon-all -s sub-01 finished without error at Fri Sep  4 12:59:36 CEST 2026
