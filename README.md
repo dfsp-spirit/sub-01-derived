@@ -28,14 +28,19 @@ Then check the [scripts directory](./scripts/).
 
 ### Functional MRI => CIFTI Grayordinates & GIfTI (fMRIPrep)
 
+
+You will need a FreeSurfer license (free) and Docker.
+
 ```shell
-FS_LIC="$FREESURFER_HOME/license.txt"
+export FS_LIC="$FREESURFER_HOME/license.txt"   # or whereever you have your FreeSurfer license on the host
+export SUB01_REPO="$HOME/develop/sub-01"
+export SUB01DERIVED_REPO="$HOME/develop/sub-01-derived"
 
 docker run --rm -it \
-  -v /home/ts/develop/sub-01/bids:/data:ro \
-  -v /home/ts/develop/sub-01-derived/bids/derivatives/fmriprep:/out \
-  -v /home/ts/develop/sub-01-derived/bids/derivatives/freesurfer-7.4.1:/fsdir \
-  -v /home/ts/develop/sub-01-derived/bids/derivatives/fmriprep_work:/work \
+  -v ${SUB01_REPO}/bids:/data:ro \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/fmriprep:/out \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/freesurfer-7.4.1:/fsdir \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/fmriprep_work:/work \
   -v "$FS_LIC":/opt/freesurfer/license.txt:ro \
   nipreps/fmriprep:latest \
   /data /out participant \
@@ -43,6 +48,27 @@ docker run --rm -it \
   --fs-subjects-dir /fsdir \
   --fs-license-file /opt/freesurfer/license.txt \
   --cifti-output 91k \
+  --ignore fieldmaps \
+  -w /work
+```
+
+### Diffusion
+
+```shell
+export FS_LIC="$FREESURFER_HOME/license.txt"   # or whereever you have your FreeSurfer license on the host
+export SUB01_REPO="$HOME/develop/sub-01"
+export SUB01DERIVED_REPO="$HOME/develop/sub-01-derived"
+
+docker run --rm -it \
+  -v ${SUB01_REPO}/bids:/data:ro \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/qsiprep:/out \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/qsiprep_work:/work \
+  -v "$FS_LIC":/opt/freesurfer/license.txt:ro \
+  pennlinc/qsiprep:latest \
+  /data /out participant \
+  --participant-label 01 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --output-resolution 2.0 \
   --ignore fieldmaps \
   -w /work
 ```

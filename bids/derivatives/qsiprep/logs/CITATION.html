@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>"QSIPrep citation boilerplate"</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+</head>
+<body>
+<p>Preprocessing was performed using <em>QSIPrep</em> 26.0.0 <span
+class="citation" data-cites="cieslak2021qsiprep">(Cieslak et al.
+2021)</span>, which is based on <em>Nipype</em> 1.11.0 [<span
+class="citation" data-cites="nipype1">Gorgolewski et al. (2011)</span>;
+<span class="citation" data-cites="nipype2">Esteban et al.
+(2025)</span>; RRID:SCR_002502] and follows <em>NiPreps</em> framework
+<span class="citation" data-cites="nipreps">(Esteban et al.
+2019)</span>.</p>
+<h4 id="anatomical-data-preprocessing">Anatomical data
+preprocessing</h4>
+<p>The T1-weighted (T1w) image was corrected for intensity
+non-uniformity (INU) using <code>N4BiasFieldCorrection</code> <span
+class="citation" data-cites="n4">(Tustison et al. 2010, ANTs
+2.4.3)</span>, and used as an anatomical reference throughout the
+workflow. The anatomical reference image was reoriented into AC-PC
+alignment via a 6-DOF transform extracted from a full Affine
+registration to the MNI152NLin2009cAsym template. A full nonlinear
+registration to the template from AC-PC space was estimated via
+symmetric nonlinear registration (SyN) using antsRegistration (<span
+class="citation" data-cites="ants">Avants et al. (2008)</span>). Brain
+extraction was performed on the T1w image using SynthStrip <span
+class="citation" data-cites="synthstrip">(Hoopes et al. 2022)</span> and
+automated segmentation was performed using SynthSeg <span
+class="citation" data-cites="synthseg1 synthseg2">(Billot, Greve, et al.
+2023; Billot, Magdamo, et al. 2023)</span> from FreeSurfer version
+7.3.1.</p>
+<h4 id="diffusion-data-preprocessing">Diffusion data preprocessing</h4>
+<p>DWI data were denoised using the Marchenko-Pastur PCA method
+implemented in dwidenoise <span class="citation"
+data-cites="mrtrix3 dwidenoise1 dwidenoise2 cordero2019complex">(Tournier
+et al. 2019; Veraart, Novikov, et al. 2016; Veraart, Fieremans, et al.
+2016; Cordero-Grande et al. 2019)</span> with an
+automatically-determined window size of 5 voxels. Any images with a
+b-value less than 100 s/mm^2 were treated as a <em>b</em>=0 image. The
+mean intensity of the DWI series was adjusted so all the mean intensity
+of the b=0 images matched across eachseparate DWI scanning sequence. B1
+field inhomogeneity was corrected using <code>dwibiascorrect</code> from
+MRtrix3 with the N4 algorithm <span class="citation"
+data-cites="n4">(Tustison et al. 2010)</span> after corrected images
+were resampled.</p>
+<p>FSL (version None)’s eddy was used for head motion correction and
+Eddy current correction <span class="citation"
+data-cites="anderssoneddy">(Andersson and Sotiropoulos 2016)</span>.
+Eddy was configured with a <span
+class="math inline"><em>q</em></span>-space smoothing factor of 10, a
+total of 5 iterations, and 1000 voxels used to estimate hyperparameters.
+A quadratic first level model and a linear second level model were used
+to characterize Eddy current-related spatial distortion. <span
+class="math inline"><em>q</em></span>-space coordinates were forcefully
+assigned to shells. Field offset was attempted to be separated from
+subject movement. Shells were aligned post-eddy. Eddy’s outlier
+replacement was run <span class="citation"
+data-cites="eddyrepol">(Andersson et al. 2016)</span>. Data were grouped
+by slice, only including values from slices determined to contain at
+least 250 intracerebral voxels. Groups deviating by more than 4 standard
+deviations from the prediction had their data replaced with imputed
+values. Final interpolation was performed using the <code>jac</code>
+method.</p>
+<p>Several confounding time-series were calculated based on the
+preprocessed DWI: framewise displacement (FD) using the implementation
+in <em>Nipype</em> <span class="citation"
+data-cites="power_fd_dvars">(following the definitions by Power et al.
+2014)</span>. The head-motion estimates calculated in the correction
+step were also placed within the corresponding confounds file. Slicewise
+cross correlation was also calculated. The DWI time-series were
+resampled to ACPC, generating a <em>preprocessed DWI run in ACPC
+space</em> with 2mm isotropic voxels.</p>
+<p>Many internal operations of <em>QSIPrep</em> use <em>Nilearn</em>
+0.10.1 <span class="citation" data-cites="nilearn">(Abraham et al. 2014,
+RRID:SCR_001362)</span> and <em>Dipy</em> <span class="citation"
+data-cites="dipy">(Garyfallidis et al. 2014)</span>. For more details of
+the pipeline, see <a
+href="https://qsiprep.readthedocs.io/en/latest/workflows.html"
+title="QSIPrep&#39;s documentation">the section corresponding to
+workflows in <em>QSIPrep</em>’s documentation</a>.</p>
+<h3 class="unnumbered" id="references">References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-nilearn" class="csl-entry" role="listitem">
+Abraham, Alexandre, Fabian Pedregosa, Michael Eickenberg, et al. 2014.
+<span>“Machine Learning for Neuroimaging with Scikit-Learn.”</span>
+<em>Frontiers in Neuroinformatics</em> 8. <a
+href="https://doi.org/10.3389/fninf.2014.00014">https://doi.org/10.3389/fninf.2014.00014</a>.
+</div>
+<div id="ref-eddyrepol" class="csl-entry" role="listitem">
+Andersson, Jesper L. R, Mark S. Graham, Enikő Zsoldos, and Stamatios N.
+Sotiropoulos. 2016. <span>“Incorporating Outlier Detection and
+Replacement into a Non-Parametric Framework for Movement and Distortion
+Correction of Diffusion MR Images.”</span> <em>NeuroImage</em> 141:
+556–72. <a
+href="https://doi.org/10.1016/j.neuroimage.2016.06.058">https://doi.org/10.1016/j.neuroimage.2016.06.058</a>.
+</div>
+<div id="ref-anderssoneddy" class="csl-entry" role="listitem">
+Andersson, Jesper L. R., and Stamatios N. Sotiropoulos. 2016. <span>“An
+Integrated Approach to Correction for Off-Resonance Effects and Subject
+Movement in Diffusion MR Imaging.”</span> <em>NeuroImage</em> 125:
+1063–78. <a
+href="https://doi.org/10.1016/j.neuroimage.2015.10.019">https://doi.org/10.1016/j.neuroimage.2015.10.019</a>.
+</div>
+<div id="ref-ants" class="csl-entry" role="listitem">
+Avants, B, C Epstein, M Grossman, and J Gee. 2008. <span>“Symmetric
+Diffeomorphic Image Registration with Cross-Correlation: Evaluating
+Automated Labeling of Elderly and Neurodegenerative Brain.”</span>
+<em>Medical Image Analysis</em> 12 (1): 26–41. <a
+href="https://doi.org/10.1016/j.media.2007.06.004">https://doi.org/10.1016/j.media.2007.06.004</a>.
+</div>
+<div id="ref-synthseg1" class="csl-entry" role="listitem">
+Billot, Benjamin, Douglas N. Greve, Oula Puonti, et al. 2023.
+<span>“SynthSeg: Segmentation of Brain MRI Scans of Any Contrast and
+Resolution Without Retraining.”</span> <em>Medical Image Analysis</em>
+86: 102789. <a
+href="https://doi.org/10.1016/j.media.2023.102789">https://doi.org/10.1016/j.media.2023.102789</a>.
+</div>
+<div id="ref-synthseg2" class="csl-entry" role="listitem">
+Billot, Benjamin, Colin Magdamo, You Cheng, Steven E. Arnold, Sudeshna
+Das, and Juan Eugenio Iglesias. 2023. <span>“Robust Machine Learning
+Segmentation for Large-Scale Analysis of Heterogeneous Clinical Brain
+MRI Datasets.”</span> <em>Proceedings of the National Academy of
+Sciences</em> 120 (9): e2216399120. <a
+href="https://doi.org/10.1073/pnas.2216399120">https://doi.org/10.1073/pnas.2216399120</a>.
+</div>
+<div id="ref-cieslak2021qsiprep" class="csl-entry" role="listitem">
+Cieslak, Matthew, Philip A. Cook, Xiaosong He, et al. 2021.
+<span>“QSIPrep: An Integrative Platform for Preprocessing and
+Reconstructing Diffusion MRI Data.”</span> <em>Nature Methods</em> 18
+(7): 775–78. <a
+href="https://doi.org/10.1038/s41592-021-01185-5">https://doi.org/10.1038/s41592-021-01185-5</a>.
+</div>
+<div id="ref-cordero2019complex" class="csl-entry" role="listitem">
+Cordero-Grande, Lucilio, Daan Christiaens, Jana Hutter, Anthony N.
+Price, and Jo V. Hajnal. 2019. <span>“Complex Diffusion-Weighted Image
+Estimation via Matrix Recovery Under General Noise Models.”</span>
+<em>NeuroImage</em> 200: 391–404. <a
+href="https://doi.org/10.1016/j.neuroimage.2019.06.039">https://doi.org/10.1016/j.neuroimage.2019.06.039</a>.
+</div>
+<div id="ref-nipype2" class="csl-entry" role="listitem">
+Esteban, Oscar, Christopher J. Markiewicz, Christopher Burns, et al.
+2025. <em>Nipy/Nipype: 1.9.1</em>.
+</div>
+<div id="ref-nipreps" class="csl-entry" role="listitem">
+Esteban, Oscar, Jessey Wright, Christopher Johnson Markiewicz, et al.
+2019. <em>NiPreps: Enabling the Division of Labor in Neuroimaging Beyond
+fMRIPrep</em>. Open Science Framework. <a
+href="https://doi.org/10.31219/osf.io/ujxp6">https://doi.org/10.31219/osf.io/ujxp6</a>.
+</div>
+<div id="ref-dipy" class="csl-entry" role="listitem">
+Garyfallidis, Eleftherios, Matthew Brett, Bagrat Amirbekian, et al.
+2014. <span>“Dipy, a Library for the Analysis of Diffusion MRI
+Data.”</span> <em>Frontiers in Neuroinformatics</em> 8: 8. <a
+href="https://doi.org/10.3389/fninf.2014.00008">https://doi.org/10.3389/fninf.2014.00008</a>.
+</div>
+<div id="ref-nipype1" class="csl-entry" role="listitem">
+Gorgolewski, Krzysztof, Christopher D. Burns, Cindee Madison, et al.
+2011. <span>“Nipype: A Flexible, Lightweight and Extensible Neuroimaging
+Data Processing Framework in Python.”</span> <em>Frontiers in
+Neuroinformatics</em> 5: 13. <a
+href="https://doi.org/10.3389/fninf.2011.00013">https://doi.org/10.3389/fninf.2011.00013</a>.
+</div>
+<div id="ref-synthstrip" class="csl-entry" role="listitem">
+Hoopes, Andrew, Jocelyn S. Mora, Adrian V. Dalca, Bruce Fischl, and
+Malte Hoffmann. 2022. <span>“SynthStrip: Skull-Stripping for Any Brain
+Image.”</span> <em>NeuroImage</em> 260: 119474. <a
+href="https://doi.org/10.1016/j.neuroimage.2022.119474">https://doi.org/10.1016/j.neuroimage.2022.119474</a>.
+</div>
+<div id="ref-power_fd_dvars" class="csl-entry" role="listitem">
+Power, Jonathan D., Anish Mitra, Timothy O. Laumann, Abraham Z. Snyder,
+Bradley L. Schlaggar, and Steven E. Petersen. 2014. <span>“Methods to
+Detect, Characterize, and Remove Motion Artifact in Resting State
+fMRI.”</span> <em>NeuroImage</em> 84 (Supplement C): 320–41. <a
+href="https://doi.org/10.1016/j.neuroimage.2013.08.048">https://doi.org/10.1016/j.neuroimage.2013.08.048</a>.
+</div>
+<div id="ref-mrtrix3" class="csl-entry" role="listitem">
+Tournier, J-Donald, Robert Smith, David Raffelt, et al. 2019.
+<span>“MRtrix3: A Fast, Flexible and Open Software Framework for Medical
+Image Processing and Visualisation.”</span> <em>NeuroImage</em> 202:
+116137. <a
+href="https://doi.org/10.1016/j.neuroimage.2019.116137">https://doi.org/10.1016/j.neuroimage.2019.116137</a>.
+</div>
+<div id="ref-n4" class="csl-entry" role="listitem">
+Tustison, Nicholas J, Brian B Avants, Philip A Cook, et al. 2010.
+<span>“N4ITK: Improved N3 Bias Correction.”</span> <em>IEEE Transactions
+on Medical Imaging</em> 29 (6): 1310–20. <a
+href="https://doi.org/10.1109/TMI.2010.2046908">https://doi.org/10.1109/TMI.2010.2046908</a>.
+</div>
+<div id="ref-dwidenoise2" class="csl-entry" role="listitem">
+Veraart, Jelle, Els Fieremans, and Dmitry S. Novikov. 2016.
+<span>“Diffusion MRI Noise Mapping Using Random Matrix Theory.”</span>
+<em>Magnetic Resonance in Medicine</em> 76 (5): 1582–93. <a
+href="https://doi.org/10.1002/mrm.26059">https://doi.org/10.1002/mrm.26059</a>.
+</div>
+<div id="ref-dwidenoise1" class="csl-entry" role="listitem">
+Veraart, Jelle, Dmitry S. Novikov, Daan Christiaens, Benjamin Ades-aron,
+Jan Sijbers, and Els Fieremans. 2016. <span>“Denoising of Diffusion MRI
+Using Random Matrix Theory.”</span> <em>NeuroImage</em> 142: 394–406. <a
+href="https://doi.org/10.1016/j.neuroimage.2016.08.016">https://doi.org/10.1016/j.neuroimage.2016.08.016</a>.
+</div>
+</div>
+</body>
+</html>
