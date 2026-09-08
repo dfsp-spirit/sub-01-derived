@@ -25,6 +25,28 @@ You will need:
 Then check the [scripts directory](./scripts/).
 
 
+
+### Functional MRI => CIFTI Grayordinates & GIfTI (fMRIPrep)
+
+```shell
+FS_LIC="$FREESURFER_HOME/license.txt"
+
+docker run --rm -it \
+  -v /home/ts/develop/sub-01/bids:/data:ro \
+  -v /home/ts/develop/sub-01-derived/bids/derivatives/fmriprep:/out \
+  -v /home/ts/develop/sub-01-derived/bids/derivatives/freesurfer-7.4.1:/fsdir \
+  -v /home/ts/develop/sub-01-derived/bids/derivatives/fmriprep_work:/work \
+  -v "$FS_LIC":/opt/freesurfer/license.txt:ro \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label 01 \
+  --fs-subjects-dir /fsdir \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --cifti-output 91k \
+  --ignore fieldmaps \
+  -w /work
+```
+
 ## Prerequisites for Large File Cloning (Optional)
 
 This repository uses [Git LFS](https://git-lfs.com/) to manage large binary files. This affects only 1 file currently:
