@@ -1,0 +1,16 @@
+{
+  "DelayTime": 0.01750000000000007,
+  "RepetitionTime": 2,
+  "SkullStripped": false,
+  "SliceTimingCorrected": true,
+  "Sources": [
+    "bids:raw:sub-01/func/sub-01_task-rest_bold.nii.gz",
+    "bids::sub-01/func/sub-01_task-rest_desc-coreg_boldref.nii.gz",
+    "bids::sub-01/func/sub-01_task-rest_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt",
+    "bids::sub-01/func/sub-01_task-rest_from-boldref_to-T1w_mode-image_desc-coreg_xfm.txt",
+    "bids::sub-01/anat/sub-01_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5",
+    "bids:templateflow:tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz"
+  ],
+  "StartTime": 0.964,
+  "TaskName": "rest"
+}

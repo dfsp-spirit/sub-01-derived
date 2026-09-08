@@ -1,0 +1,93 @@
+[environment]
+cpu_count = 16
+exec_env = "singularity"
+free_mem = 22.2
+overcommit_policy = "heuristic"
+overcommit_limit = "50%"
+nipype_version = "1.10.0"
+templateflow_version = "25.0.4"
+version = "25.2.5"
+
+[execution]
+bids_dir = "/data"
+bids_database_dir = "/tmp/work/20260908-140037_cf0d4f80-e3f4-41a9-a65a-d813822f1e02/bids_db"
+bids_description_hash = "7dfe7c946f1dd55601167ac5fedf42847d4bb4d63a94c708a5503f93a62e9614"
+boilerplate_only = false
+sloppy = false
+debug = []
+fmriprep_dir = "/out"
+fs_subjects_dir = "/fsdir"
+layout = "BIDS Layout: .../data | Subjects: 1 | Sessions: 0 | Runs: 0"
+log_dir = "/out/logs"
+log_level = 25
+low_mem = false
+md_only_boilerplate = false
+notrack = false
+track_carbon = false
+country_code = "CAN"
+output_dir = "/out"
+me_output_echos = false
+aggr_ses_reports = 4
+output_layout = "bids"
+output_spaces = "MNI152NLin2009cAsym:res-native"
+reports_only = false
+run_uuid = "20260908-140037_cf0d4f80-e3f4-41a9-a65a-d813822f1e02"
+processing_groups = [ "sub-01",]
+participant_label = [ "01",]
+templateflow_home = "/home/fmriprep/.cache/templateflow"
+work_dir = "/tmp/work"
+write_graph = false
+
+[workflow]
+anat_only = false
+bold2anat_dof = 6
+bold2anat_init = "t2w"
+cifti_output = "91k"
+fmap_bspline = false
+force_syn = false
+hires = true
+fs_no_resume = false
+ignore = [ "fieldmaps",]
+force = []
+level = "full"
+run_msmsulc = true
+medial_surface_nan = false
+project_goodvoxels = false
+regressors_all_comps = false
+regressors_dvars_th = 1.5
+regressors_fd_th = 0.5
+run_reconall = false
+skull_strip_fixed_seed = false
+skull_strip_template = "OASIS30ANTs"
+skull_strip_t1w = "force"
+slice_time_ref = 0.5
+spaces = "MNI152NLin2009cAsym:res-native MNI152NLin6Asym:res-2"
+subject_anatomical_reference = "first-lex"
+track_sessions = true
+use_syn_sdc = false
+me_t2s_fit_method = "curvefit"
+
+[nipype]
+crashfile_format = "txt"
+get_linked_libs = false
+nprocs = 16
+omp_nthreads = 8
+plugin = "MultiProc"
+remove_unnecessary_outputs = true
+resource_monitor = false
+stop_on_first_crash = false
+
+[seeds]
+master = 9128
+ants = 25541
+numpy = 38167
+
+[execution.derivatives]
+
+[execution.dataset_links]
+raw = "/data"
+templateflow = "/home/fmriprep/.cache/templateflow"
+
+[nipype.plugin_args]
+maxtasksperchild = 1
+raise_insufficient = false
