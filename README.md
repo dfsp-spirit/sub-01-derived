@@ -54,6 +54,8 @@ docker run --rm -it \
 
 ### Diffusion
 
+#### Step 1
+
 ```shell
 export FS_LIC="$FREESURFER_HOME/license.txt"   # or whereever you have your FreeSurfer license on the host
 export SUB01_REPO="$HOME/develop/sub-01"
@@ -72,6 +74,31 @@ docker run --rm -it \
   --ignore fieldmaps \
   -w /work
 ```
+
+#### Step 2
+
+```shell
+export FS_LIC="$FREESURFER_HOME/license.txt"   # or whereever you have your FreeSurfer license on the host
+export SUB01DERIVED_REPO="$HOME/develop/sub-01-derived"
+
+mkdir -p "$HOME/.cache/templateflow"
+
+docker run --rm -it \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/qsiprep:/data:ro \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/qsirecon:/out \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/freesurfer-7.4.1:/fsdir \
+  -v ${SUB01DERIVED_REPO}/bids/derivatives/qsirecon_work:/work \
+  -v "$HOME/.cache/templateflow":/home/qsirecon/.cache/templateflow \
+  -v "$FS_LIC":/opt/freesurfer/license.txt:ro \
+  pennlinc/qsirecon:latest \
+  /data /out participant \
+  --participant-label 01 \
+  --recon-spec mrtrix_singleshell_ss3t_ACT-hsvs \
+  --fs-subjects-dir /fsdir \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --atlases AAL116 \
+  -w /work
+```shell
 
 ## Prerequisites for Large File Cloning (Optional)
 
