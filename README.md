@@ -52,3 +52,9 @@ Your checkout will only contain tiny text pointer files (~130 bytes for all LFS 
 git lfs install
 git lfs pull
 ```
+
+## License
+
+These neuroimaging data are dedicated to the public domain under the **Creative Commons Zero v1.0 Universal (CC0 1.0)** dedication.
+
+You can copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission. See the [LICENSE](LICENSE) file for the full legal text, or read the human-readable summary at [Creative Commons](https://creativecommons.org/publicdomain/zero/1.0/).
