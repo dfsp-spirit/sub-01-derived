@@ -9,5 +9,9 @@
       "Description": "Cortical reconstruction via recon-all",
       "CodeURL": "https://surfer.nmr.mgh.harvard.edu/"
     }
-  ]
+  ],
+  "SourceDatasetsURLs": [
+        "https://doi.org/10.5281/zenodo.22697454"
+  ],
+  "License": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 }
