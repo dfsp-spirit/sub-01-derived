@@ -102,9 +102,11 @@ docker run --rm -it \
 
 ## Prerequisites for Large File Cloning (Optional)
 
-This repository uses [Git LFS](https://git-lfs.com/) to manage large binary files. This affects only 1 file currently:
+This repository uses [Git LFS](https://git-lfs.com/) to manage large binary files. This affects all files of these types currently:
 
-* bids/derivatives/freesurfer-8.2.0/sub-01/mri/transforms/synthmorph.1.0mm.1.0mm/warp.to.mni152.1.0mm.1.0mm.inv.nii.gz
+* Files ending with `*.nii`
+* Files ending with `*.nii.gz`
+* Files ending with `*.h5`
 
 If you need this file, read on. Otherwise ignore this.
 
@@ -120,7 +122,7 @@ git clone https://github.com/dfsp-spirit/sub-01-derived
 ```
 
 If you cloned without Git LFS installed first:
-Your checkout will only contain tiny text pointer files (~130 bytes) for all LFS files (currently only the one file listed above). To pull the actual data:
+Your checkout will only contain tiny text pointer files (~130 bytes) for all LFS files. To pull the actual data:
 
 
 ```bash
