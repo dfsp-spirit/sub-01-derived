@@ -1,7 +1,13 @@
 # sub-01-derived
 
-Preprocessing output from FreeSurfer's `recon-all` pipeline, derived from the raw DICOM images in the [sub-01 repo](https://github.com/dfsp-spirit/sub-01).
+Preprocessing output from FreeSurfer's `recon-all` pipeline and fmriprep, derived from the raw DICOM images in the [sub-01 repo](https://github.com/dfsp-spirit/sub-01).
 
+
+**This git repo is a convenience access method to a subset of the data in the following dataset, published on Zenodo:**
+
+* [MR scans of a human, adult brain at 3T in BIDS format. Includes DICOMS, preprocessed output of FreeSurfer, fmriprep and qsirecon](https://doi.org/10.5281/zenodo.22697454)
+
+The full dataset also contains qsirecon output that is too large for this git repository.
 
 ## Repo Organization
 
