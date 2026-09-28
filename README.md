@@ -11,11 +11,12 @@ The full dataset also contains qsirecon output that is too large for this git re
 
 ## Repo Organization
 
-The [bids/derivatives/ directory](./bids/derivatives/) contains recon-all output of the following FreeSurfer versions:
+The [bids/derivatives/ directory](./bids/derivatives/) contains the following output:
 
-* FreeSurfer v6.0 in [bids/derivatives/freesurfer](./bids/derivatives/freesurfer/)
-* FreeSurfer v7.4.1 in [bids/derivatives/freesurfer-7.4.1](./bids/derivatives/freesurfer-7.4.1/)
-* FreeSurfer v8.2.0 in [bids/derivatives/freesurfer-8.2.0](./bids/derivatives/freesurfer-8.2.0/)
+* FreeSurfer v6.0 `recon-all` in [bids/derivatives/freesurfer](./bids/derivatives/freesurfer/)
+* FreeSurfer v7.4.1 `recon-all` in [bids/derivatives/freesurfer-7.4.1](./bids/derivatives/freesurfer-7.4.1/)
+* FreeSurfer v8.2.0 `recon-all` in [bids/derivatives/freesurfer-8.2.0](./bids/derivatives/freesurfer-8.2.0/)
+* FSL `fsl_first`, `fsl_dti`, `fsl_melodic` in [bids/derivatives/fsl_*](./bids/derivatives/)
 
 
 ## Reproduction
