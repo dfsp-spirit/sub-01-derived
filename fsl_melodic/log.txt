@@ -1,0 +1,12 @@
+
+Melodic Version 2601.2-dirty
+
+melodic -i /home/ts/develop/sub-01-derived/bids/derivatives/fmriprep/sub-01/func/sub-01_task-rest_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -o /home/ts/develop/sub-01-derived/fsl_melodic --mask=~/develop/sub-01-derived/bids/derivatives/fmriprep/sub-01/func/sub-01_task-rest_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz --nobet --report -d 20 
+---------------------------------------------
+
+
+Melodic Version 2601.2-dirty
+
+melodic -i /home/ts/develop/sub-01-derived/bids/derivatives/fmriprep/sub-01/func/sub-01_task-rest_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz -o /home/ts/develop/sub-01-derived/fsl_melodic --mask=/home/ts/develop/sub-01-derived/bids/derivatives/fmriprep/sub-01/func/sub-01_task-rest_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz --nobet --report -d 20 
+---------------------------------------------
+
