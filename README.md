@@ -106,6 +106,48 @@ docker run --rm -it \
   -w /work
 ```shell
 
+
+### FSL
+
+#### Common preproc: fsl_first
+
+```shell
+# in repo root, with FSL installed and setup:
+mkdir fsl_first
+run_first_all -i ./bids/sub-01/anat/sub-01_T1w.nii.gz -o ./fsl_first/sub-01
+```
+
+#### FSL DWI: dtifit
+
+Note that this uses DTI output generated above.
+
+```shell
+mkdir -p ~/develop/sub-01-derived/fsl_dti
+
+dtifit \
+  -k ~/develop/sub-01-derived/bids/derivatives/qsiprep/sub-01/dwi/sub-01_space-ACPC_desc-preproc_dwi.nii.gz \
+  -o ~/develop/sub-01-derived/fsl_dti/dti \
+  -m ~/develop/sub-01-derived/bids/derivatives/qsiprep/sub-01/dwi/sub-01_space-ACPC_desc-brain_mask.nii.gz \
+  -r ~/develop/sub-01-derived/bids/derivatives/qsiprep/sub-01/dwi/sub-01_space-ACPC_desc-preproc_dwi.bvec \
+  -b ~/develop/sub-01-derived/bids/derivatives/qsiprep/sub-01/dwi/sub-01_space-ACPC_desc-preproc_dwi.bval \
+  --save_tensor
+```
+
+#### Spatial ICA (melodic)
+
+```bash
+mkdir -p "$HOME/develop/sub-01-derived/fsl_melodic"
+
+melodic \
+  -i "$HOME/develop/sub-01-derived/bids/derivatives/fmriprep/sub-01/func/sub-01_task-rest_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz" \
+  -o "$HOME/develop/sub-01-derived/fsl_melodic" \
+  --mask="$HOME/develop/sub-01-derived/bids/derivatives/fmriprep/sub-01/func/sub-01_task-rest_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz" \
+  --nobet \
+  --report \
+  -d 20
+```
+
+
 ## Prerequisites for Large File Cloning (Optional)
 
 This repository uses [Git LFS](https://git-lfs.com/) to manage large binary files. This affects all files of these types currently:
